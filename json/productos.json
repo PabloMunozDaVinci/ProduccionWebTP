@@ -1,0 +1,114 @@
+{
+    "1": {
+        "id": 1,
+        "nombre": "Notebook Hp Core I3 1005g1 10ma 15.6 Ssd 128gb 4gb Win10",
+        "descripcion": "Caracter\u00edsticas adecuadas, precio adecuado esta notebook HP presenta la combinaci\u00f3n perfecta de dise\u00f1o, confiabilidad y recursos.",
+        "precio": "$85.999",
+        "cantidad": "10",
+        "destacado": true,
+        "img": "im1.png",
+        "categoria": 1,
+        "marca": 1,
+        "modelo": "tx2021"
+    },
+    "2": {
+        "id": 2,
+        "nombre": "Joystick Sony Dualshock 4 steel black PS4",
+        "descripcion": "Este joystick esta equipado para que computadoras con windows 10. ",
+        "precio": "$7.999",
+        "cantidad": "2",
+        "destacado": true,
+        "img": "im2.png",
+        "categoria": 2,
+        "marca": 2,
+        "modelo": "Gamepad"
+    },
+    "3": {
+        "id": 3,
+        "nombre": "Smart Tv Led Android 65p Cdh-le654ksmart20 Hitachi",
+        "descripcion": "Smart Tv Led ideal para el hogar, el estudio y el entretenimiento.",
+        "precio": "$69.999",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im3.png",
+        "categoria": 3,
+        "marca": 3
+    },
+    "4": {
+        "id": 4,
+        "nombre": "Perfume BENSIMON SMART 80ml EAU DE PARFUM",
+        "descripcion": "BENSIMONP PARFUM l1a mejor frangancia.",
+        "precio": "$ 1.399",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im4.png",
+        "categoria": 4,
+        "marca": 4
+    },
+    "5": {
+        "id": 5,
+        "nombre": "Tostadora Black & Decker Tr19610-Negro",
+        "descripcion": "Tostadora Black & Decker es ideal para el hogar.",
+        "precio": "$3.999",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im5.png",
+        "categoria": 5,
+        "marca": 2
+    },
+    "6": {
+        "id": 6,
+        "nombre": "Computadora de escritorio HP 280 I3 8100",
+        "descripcion": "Caracter\u00edsticas adecuadas, precio adecuado esta Pc HP presenta la combinaci\u00f3n perfecta de dise\u00f1o, confiabilidad y recursos.",
+        "precio": "$56.300,00",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im6.jpg",
+        "categoria": 1,
+        "marca": 1
+    },
+    "7": {
+        "id": 7,
+        "nombre": "Placa de Video Nvidia RTX 2080",
+        "descripcion": "Placa de Video Nvidia RTX 2080 ideal para jugar.",
+        "precio": "$66.000",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im7.jpg",
+        "categoria": 1,
+        "marca": 6
+    },
+    "8": {
+        "id": 8,
+        "nombre": "Joystick Xbox One",
+        "descripcion": "Joystick Xbox One ideal para tu consola.",
+        "precio": "$15.999",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im8.jpg",
+        "categoria": 2,
+        "marca": 7
+    },
+    "9": {
+        "id": 9,
+        "nombre": "Consola PlayStation 5",
+        "descripcion": "la traemos antes que nadie.",
+        "precio": "$80.000",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im9.jpg",
+        "categoria": 2,
+        "marca": 2
+    },
+    "10": {
+        "id": 10,
+        "nombre": "Parlante UE WonderBoom",
+        "descripcion": "Parlante UE WonderBoom ideal para la pileta.",
+        "precio": "$3.999",
+        "cantidad": "1",
+        "destacado": true,
+        "img": "im10.jpg",
+        "categoria": 3,
+        "marca": 8
+    }
+}

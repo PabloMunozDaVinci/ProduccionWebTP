@@ -1,3 +1,36 @@
+<?php
+$result="";
+if (isset ($_POST['submit'])){
+  require 'PhpMailer/PHPMailerAutoload.php';
+  $mail = new PHPMailer;
+  $mail->isSMTP();
+  $mail->Host='smtp.gmail.com';
+  $mail->Port=25;
+  $mail->SMTPAuth=true;
+  $mail->SMTPSecure='tls';
+  $mail->Username='programacionweb2grupo8@gmail.com';
+  $mail->Password='Hola1234';
+
+  $mail->setFrom($_POST['email'],$_POST['nombre']);
+  $mail->addAddress('programacionweb2grupo8@gmail.com');
+  $mail->addReplyTo($_POST['email'],$_POST['nombre']);
+
+  $mail->isHTML(true);
+  $mail->Subject='enviado por'.$_POST['nombre'];
+  $mail->Body='<h1 align=center>Nombre: '.$_POST['nombre'].'<br>Email: '.$_POST['email'].'<br>Mensaje: '
+  .$_POST['mensaje'].'</h1>';
+
+
+if (!$mail->send()){
+$result="Algo esta mal, intentelo ed nuevo por favor";
+}
+else{
+  $result="Gracias".$_POST['nombre']."por contactarnos, espera la respuesta protno!";
+}
+
+}
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -96,40 +129,26 @@
     </div> </div> </div>
     <h3 class="h4 mt-4 d-flex justify-content-center rti"> Dejanos tus sugerencias</h3>
     <div class="row   m-4 justify-content-center">
+
             <div class="col-sm-4">
-                <form>
-
-                <div class="form-group  ">
-                        <label for="exampleFormControlInput1 rt">Nombre y Apellido</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="juan nuñez">
-                    </div>
-
+                <form action="" method="post">
+                <label for="nombre">Nombre y apellido</label>
+      <input id="nombre" name="nombre" type="text" maxlength="50" data-lenght="50" required />
                     <div class="form-group  ">
-                        <label for="exampleFormControlInput1 rt">Mail</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@Ejemplo.com">
-                    </div>
-
-                    <div class="form-group  ">
-                        <label for="exampleFormControlInput1 rt">Teléfono</label>
-                        <input type="tel" class="form-control" id="exampleFormControlInput1" placeholder="01150501854">
-                    </div>
-
-                    <div class="form-group  ">
-                        <label for="exampleFormControlInput1 rt">¿Con que Area desea comunicarse?</label><br>
-                        <input type="checkbox" id="opcion1" name="opcion1" >
-                        <label for="opcion1"> Ventas</label>
-                        <input type="checkbox" id="opcion2" name="opcion2" >
-                        <label for="opcion2"> RR.HH</label><br>
+                        <label for="email">Mail</label>
+                        <input type="email" name="email" class="form-control" id="email" placeholder="Nombre@Ejemplo.com" required>
                     </div>
 
                     <div class="form-group ">
                         <label for="exampleFormControlTextarea1 rt">Texto</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" name="mensaje"id="exampleFormControlTextarea1" rows="3" required></textarea>
                     </div>
-                    <div class="form-group "> <button type="button" class="btn boton1 rt">Enviar</button> </div>
 
 
-
+                    <div class="form-group ">
+                       <button type="submit" name="submit" class="btn boton1 rt">Enviar</button>
+                  <h5 class="notifiCorrecto">  <?= $result;?> </h5>
+                  </div>
                 </form>
             </div>
 
