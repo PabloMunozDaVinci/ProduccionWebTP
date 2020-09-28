@@ -10,7 +10,7 @@ require_once('clases/productos.php');
 
 
 $Productos = new Productos($con);
-foreach($Productos->getProductos() as $prod){
+foreach($Productos->getProductos($_GET) as $prod){
 
 	?>
 

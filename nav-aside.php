@@ -20,10 +20,10 @@
 
 		
 		
- <li><a href="producto.php? cat=<?php echo $cat['id']?>&marca=<?php echo (isset($_GET['marca'])?$_GET['marca']:'')?>" data-abc="true"><?php echo $cat['nombre']?></a></li>
+ <li><a href="producto.php?cat=<?php echo $cat['id']?>&marca=<?php echo isset($_GET['marca'])?$_GET['marca']:''?>" data-abc="true"><?php echo $cat['nombre']?></a></li>
 								 
 		 <?php } ?> 								 
-<li><a href="producto.php? cat=& mar= <?php echo isset($_GET['mar'])? $_GET['mar']:''?>" data-abc="true">todos</a></li>                                
+<li><a href="producto.php?cat=&mar=<?php echo isset($_GET['mar'])? $_GET['mar']:''?>" data-abc="true">todos</a></li>                                
 								 
            </ul>
       </div>
